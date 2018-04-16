@@ -1,4 +1,4 @@
-#daily
+# daily
 
 1. [免切换合并分支](https://coderwall.com/p/0kxphg/merging-branches-without-checkout)
 
