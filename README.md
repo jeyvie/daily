@@ -17,3 +17,7 @@
 	git reset -- main/dontcheckmein.txt
 	```
 
+4. [`gulp` 自动更新](docs/gulp_live.md)
+
+* [ ] 5. `gulp` 给文件做 `hash`, 或者 `gulp` 基本配置，常用插件
+
