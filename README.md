@@ -1,5 +1,7 @@
 # daily
 
+先记着，忙过了这阵处理(`4/23`)
+
 1. [免切换合并分支](https://coderwall.com/p/0kxphg/merging-branches-without-checkout)
 
 	```
@@ -27,4 +29,24 @@
 	- `cmd + g`: 跳转到下一个匹配到的内容
 	- `cmd + shif + g`: 跳转到上一个匹配到的内容
 	- 目前的感觉，`cmd + g` 可以代替 `cmd + f`， 不仅能查找，还能跳转
+
+7. `linux` 权限命令 与 `gitreceive`
+
+	上周五弄了把上线， 用 [gitreceive](https://github.com/progrium/gitreceive) 做了上线自动编译的事
+	
+	今天操作了下权限相关的事
+	
+	1. 一个坑
+		
+		```
+		如果 user1 对文件夹dir没有执行权限，那把dir下的文件 file1 执行权赋予了  user1。那 user1 也是没法操作 file1 的。
+		```
+	
+	2. 相关文章
+		
+		- [Linux系统下如何查看及修改文件读写权限](https://www.cnblogs.com/CgenJ/archive/2011/07/28/2119454.html)
+		- [linux修改权限的相关命令](https://www.jianshu.com/p/9b6f7ba6bc7f)
+		- [ Linux中link，unlink，close，fclose详解](https://blog.csdn.net/dlutbrucezhang/article/details/9159431)
+		- [linux shell中，unlink和rm命令有什么区别呢](http://bbs.chinaunix.net/thread-2080409-1-1.html)
+
 
