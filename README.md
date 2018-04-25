@@ -50,3 +50,5 @@
 		- [linux shell中，unlink和rm命令有什么区别呢](http://bbs.chinaunix.net/thread-2080409-1-1.html)
 
 
+8. [monitorEvents](docs/command_line_api.md)
+
