@@ -52,3 +52,9 @@
 
 8. [monitorEvents](docs/command_line_api.md)
 
+9. 下载文件
+	
+	```
+	wget -P directory URL
+	``` 
+
