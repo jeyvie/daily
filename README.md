@@ -97,5 +97,16 @@
 	- A simpler, more hackable pipeline
 	- Human readable code (这跟上面的特点有关系吗)
 	```
+	
+	
+11. 查看文件大小
+
+
+	```
+	du -h file
+	```	
+	
+	[更多](https://blog.csdn.net/wangjunjun2008/article/details/19840671)
+	
 
 
