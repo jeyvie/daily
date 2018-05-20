@@ -21,7 +21,7 @@
 
 4. [`gulp` 自动更新](docs/gulp_live.md)
 
-* [ ] 5. `gulp` 给文件做 `hash`, 或者 `gulp` 基本配置，常用插件
+5. `gulp` 给文件做 `hash`, 或者 `gulp` 基本配置，常用插件
 
 6. 查找快捷键
 	
@@ -57,4 +57,45 @@
 	```
 	wget -P directory URL
 	``` 
+
+11. [Angular Ivy](https://www.telerik.com/blogs/first-look-angular-ivy) angular 即将推出的新的渲染引擎。特点是**更小**（编译出的文件大小？）、**更快**（编译速度）、**更简单**（用法）。
+
+	 内部采用的概念
+	 
+	 1. `Locality` 一次只编译一个文件，不解析依赖(那这个依赖怎么处理？)。
+
+	 	给开发者带来的好处:
+	 	
+		 	1. AOT
+		 	2. 元编程
+
+	2. `Tree shaking`
+	
+		传统 `tree shaking` 解决不了这个问题
+		
+		
+		```
+		import { myCoolFunction } from './other';
+		
+		const myCondition = false;
+		
+		if (myCondition) {
+		  myCoolFunction(); // this will still be included
+		}
+		```
+		
+		因为要考虑到所有情况，`myCoolFunction` 也会被打包进去。但`ng` 会把代码拆分至 `函数` 粒度。 
+	
+	
+	给开发者带来的好处是：
+	
+		
+	```
+	- Smaller builds
+	- Faster rebuild times
+	- Faster development
+	- A simpler, more hackable pipeline
+	- Human readable code (这跟上面的特点有关系吗)
+	```
+
 
