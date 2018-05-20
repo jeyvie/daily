@@ -109,4 +109,20 @@
 	[更多](https://blog.csdn.net/wangjunjun2008/article/details/19840671)
 	
 
+12. [`箭头函数` 的 `this`，总是指向定义时所在的对象，而不是运行时所在的对象。](https://github.com/ruanyf/es6tutorial/issues/150)
+
+		
+	```
+	function foo(){
+	  setTimeout(() => {
+	    console.log("id:", this.id)
+	  }, 100);
+	}
+	
+	foo.call({id:42});
+	```
+	
+	因为，这个例子中，箭头函数位于foo函数内部。只有foo函数运行后，它才会按照定义生成，所以**foo运行时所在的对象，恰好是箭头函数定义时所在的对象**
+
+
 
